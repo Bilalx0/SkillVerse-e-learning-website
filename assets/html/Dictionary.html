@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/assets/css/Dictionary.css" rel="stylesheet">
+    <title>Dictionary App</title>
+</head>
+<body>
+  <h1 class="app-title">Dictionary App</h1>
+    <div class="main">
+        <div class="container">
+            <div class="search-box">
+                <input placeholder="Enter a word" id="inp">
+                <button id="btn">Search</button>
+            </div>
+            <div class="result" id="result">
+                <h2 id="word">Word</h2>
+                <p id="pho">Phonetic</p>
+                <p id="pos">Part of Speech</p>
+                <div class="definitions">
+                    <h3>Definitions:</h3>
+                    <ol>
+                        <li id="def1"></li>
+                        <li id="def2"></li>
+                        <li id="def3"></li>
+                    </ol>
+                </div>
+                <div class="synonyms">
+                    <h3>Synonyms:</h3>
+                    <p id="syn"></p>
+                </div>
+                <div class="antonyms">
+                    <h3>Antonyms:</h3>
+                    <p id="ant"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/Dictionary.js"></script>
+</body>
+</html>
