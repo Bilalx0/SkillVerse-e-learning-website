@@ -505,25 +505,27 @@ li:hover .teachers-description h3, li:hover .card span {
 /* Fifth Section End  */
 
 /* Six Section  */
-
-.six-section{
+.six-section {
   background-color: #2b8f68;
-    margin: 150px 0px 0px 0px;
-    padding: 60px 0px;
-    height: 600px;
+  margin: 150px 0px 0px 0px;
+  padding: 60px 0px;
+  min-height: 600px;
 }
-.contact{
+
+.contact {
   display: flex;
   justify-content: center;
-  margin:0px 0px 25px 0px;
+  margin: 0 0 25px 0;
 }
 
-.contact h2{
+.contact h2 {
   color: #001925;
-  width: 49%;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
 }
 
-.form-container{
+.form-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -534,8 +536,8 @@ li:hover .teachers-description h3, li:hover .card span {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  width: 45vw;
-  height: 31vw;
+  width: 90%;
+  max-width: 600px;
   background-color: #001925;
   padding: 20px;
   border-radius: 10px;
@@ -553,27 +555,37 @@ li:hover .teachers-description h3, li:hover .card span {
   display: flex;
   width: 100%;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
-input, textarea{
+input, textarea {
   background-color: #001925;
   color: white;
   font-size: 1rem;
+  width: 100%;
 }
 
 .form label {
   position: relative;
+  width: 100%;
 }
 
-.form label .input {
+.input01{
+  height: 150px;
+  resize: none;
+}
+
+.form label .input,
+.form label .input01 {
   width: 100%;
-  padding: 10px 80px 20px 10px;
+  padding: 10px 10px 20px 10px;
   outline: 0;
   border: 1px solid rgba(105, 105, 105, 0.397);
   border-radius: 5px;
 }
 
-.form label .input + span {
+.form label .input + span,
+.form label .input01 + span {
   position: absolute;
   left: 10px;
   top: 15px;
@@ -583,50 +595,22 @@ input, textarea{
   transition: 0.3s ease;
 }
 
-.form label .input:placeholder-shown + span {
+.form label .input:placeholder-shown + span,
+.form label .input01:placeholder-shown + span {
   top: 15px;
   font-size: 0.9em;
 }
 
-.form label .input:focus + span,.form label .input:valid + span {
+.form label .input:focus + span,
+.form label .input:valid + span,
+.form label .input01:focus + span,
+.form label .input01:valid + span {
   top: 30px;
   font-size: 0.7em;
   font-weight: 600;
 }
 
-.form label .input:valid + span {
-  color: #1A9465;
-}
-
-.input01 {
-  width: 100%;
-  padding: 10px 10px 20px 10px;
-  outline: 0;
-  border: 1px solid rgba(105, 105, 105, 0.397);
-  border-radius: 5px;
-}
-
-.form label .input01 + span {
-  position: absolute;
-  left: 10px;
-  top: 50px;
-  color: rgb(255, 255, 255);
-  font-size: 0.9em;
-  cursor: text;
-  transition: 0.3s ease;
-}
-
-.form label .input01:placeholder-shown + span {
-  top: 40px;
-  font-size: 0.9em;
-}
-
-.form label .input01:focus + span,.form label .input01:valid + span {
-  top: 50px;
-  font-size: 0.7em;
-  font-weight: 600;
-}
-
+.form label .input:valid + span,
 .form label .input01:valid + span {
   color: #1A9465;
 }
@@ -652,91 +636,45 @@ input, textarea{
   transition: all 0.3s ease-in-out;
   user-select: none;
   font-size: 13px;
+  width: 100%;
+  max-width: 200px;
 }
 
-.fancy::before {
-  content: " ";
-  width: 1.7rem;
-  height: 2px;
-  background: #cacaca;
-  top: 50%;
-  left: 1.5em;
-  position: absolute;
-  transform: translateY(-50%);
-  transform: translateX(230%);
-  transform-origin: center;
-  transition: background 0.3s linear, width 0.3s linear;
+/* Fancy button styles remain the same */
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form {
+    padding: 15px;
+  }
+  
+  .contact h2 {
+    font-size: 1.5em;
+  }
+  
+  .fancy {
+    max-width: 100%;
+  }
 }
 
-.fancy .text {
-  font-size: 1.125em;
-  line-height: 1.33333em;
-  padding-left: 2em;
-  display: block;
-  text-align: left;
-  transition: all 0.3s ease-in-out;
-  text-transform: lowercase;
-  text-decoration: none;
-  color: #818181;
-  transform: translateX(30%);
+@media (max-width: 480px) {
+  .six-section {
+    padding: 10% 0;
+  }
+  
+  .contact h2 {
+    font-size: 1.2em;
+  }
+  
+  .form label .input + span,
+  .form label .input01 + span {
+    font-size: 0.8em;
+  }
 }
-
-.fancy .top-key {
-  height: 2px;
-  width: 1.5625rem;
-  top: -2px;
-  left: 0.625rem;
-  position: absolute;
-  background: white;
-  transition: width 0.5s ease-out, left 0.3s ease-out;
-}
-
-.fancy .bottom-key-1 {
-  height: 2px;
-  width: 1.5625rem;
-  right: 1.875rem;
-  bottom: -2px;
-  position: absolute;
-  background: white;
-  transition: width 0.5s ease-out, right 0.3s ease-out;
-}
-
-.fancy .bottom-key-2 {
-  height: 2px;
-  width: 0.625rem;
-  right: 0.625rem;
-  bottom: -2px;
-  position: absolute;
-  background: white;
-  transition: width 0.5s ease-out, right 0.3s ease-out;
-}
-
-.fancy:hover {
-  color: white;
-  background: #cacaca;
-}
-
-.fancy:hover::before {
-  width: 1.5rem;
-  background: white;
-}
-
-.fancy:hover .text {
-  color: white;
-  padding-left: 1.5em;
-}
-
-.fancy:hover .top-key {
-  left: -2px;
-  width: 0px;
-}
-
-.fancy:hover .bottom-key-1,
- .fancy:hover .bottom-key-2 {
-  right: 0;
-  width: 0;
-}
-
 /* Six Section End  */
 
 
@@ -948,9 +886,5 @@ input, textarea{
 
   .get-in-touch p{
     font-size: 1rem;
-  }
-
-  .form-container{
-    width: 400px;
   }
 }
