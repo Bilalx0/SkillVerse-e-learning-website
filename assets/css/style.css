@@ -659,6 +659,10 @@ input, textarea {
   .fancy {
     max-width: 100%;
   }
+
+  .specialgap{
+    gap: 100px;
+  }
 }
 
 @media (max-width: 480px) {
