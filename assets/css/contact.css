@@ -1,0 +1,57 @@
+
+.logo-with-description{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.logo-with-description div{
+    background-color: #1A9465;
+    margin-top: 86px;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-lists{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.contact-lists li{
+    width: 236px;
+}
+
+.contact-logo-items span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.contact-logo-items img{
+    background-color: #1A9465;
+    border-radius: 50%;
+    padding: 15px;
+    width: 64px;
+}
+
+.contact-section{
+    margin-top: 50px;
+}
+
+input, textarea{
+    background-color: transparent;
+    padding: 5px;
+    color: black;
+    font-size: 1.2rem;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+

@@ -81,7 +81,7 @@ body{
     z-index: 1000; 
     position: sticky;
     top: 89px;
-    height: 35vh;
+    height: 23vh;
     padding: 20px 0px;
 }
 
@@ -691,6 +691,7 @@ input, textarea {
 .piclist li img{
   width: 33vw;
 }
+
 /* Footer Styling  */
 
 .footer {
@@ -765,6 +766,9 @@ input, textarea {
     gap: 42px;
   }
 
+  .hide-navbar{
+    height: 35vh;
+  }
 }
 
 @media (max-width: 576px) {
