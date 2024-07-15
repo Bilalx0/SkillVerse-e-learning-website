@@ -1,3 +1,40 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@viewport {
+  width: device-width;
+  initial-scale: 1;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #001925;
+} 
+
+body{
+    font-size: 1.2rem;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #001925;
+    background-color: whitesmoke;
+}
+
+.container{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
 
 .logo-with-description{
     display: flex;
@@ -41,7 +78,33 @@
 }
 
 .contact-section{
-    margin-top: 50px;
+   margin: 120px 0px;
+   background-color: white;
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    gap: 168px;
+}
+
+.contact-section, .form-container, .contact-pic, .contact-pic img{
+    height: 88vh;
+}
+
+.contact-pic img{
+    width: 450px;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+label{
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 input, textarea{
@@ -53,5 +116,32 @@ input, textarea{
     border-right: none;
     border-top: none;
     outline: none;
+    width: 100%;
+
+}
+
+input:focus, textarea:focus{
+    border-bottom: 3px solid #1A9465;
+}
+
+.form-container form .btn{
+    width: 140px;
+    margin: 15px 0px 0px 0px;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+
+.email-message div, .name div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.message{
+    margin: 30px 0px 0px 0px;
 }
 
