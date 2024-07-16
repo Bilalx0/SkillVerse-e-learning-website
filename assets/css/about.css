@@ -1,0 +1,83 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@viewport {
+  width: device-width;
+  initial-scale: 1;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #001925;
+} 
+
+body{
+    font-size: 1.2rem;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #001925;
+    background-color: whitesmoke;
+}
+
+.container{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.about-section{
+    margin: 70px 0px;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    width: 99vw;
+}
+
+.about-main-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+
+img{
+    width: 30vw;
+}
+
+.description{
+    width: 47vw;
+}
+
+.description span{
+    margin: 20px 0px;
+}
+
+p{
+    font-size: 1.4rem;
+}
+
+.about-main-section .btn{
+    margin: 30px 0px 0px 0px;
+}
+
+.description div{
+    margin: 0px 0px 30px 0px;
+}
+
+.description div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
